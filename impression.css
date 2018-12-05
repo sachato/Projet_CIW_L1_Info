@@ -1,0 +1,109 @@
+/*-----------------------
+    ParamÃ¨tres gÃ©nÃ©raux
+-----------------------*/
+@font-face {
+    font-family : 'roboto';
+    src : url('./Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family : 'robotobold';
+    src : url('./Roboto/Roboto-Bold.ttf');
+}
+
+body {
+    font-family : roboto;
+    display : flex;
+    flex-direction : column;
+    margin : 0;
+}
+
+nav, footer {display : none}
+
+a {
+    text-decoration : none;
+    color : black;
+}
+
+/*-----------------------
+    Section article
+-----------------------*/
+article {
+    flex : 1;
+    counter-reset: titre;
+}
+
+h1 {
+    color : #FF5722;
+    font-family: robotobold;
+    font-size : 30pt;
+    text-align : center;
+    margin-top : 0;
+}
+
+h2 {
+    color : #FFC107;
+    font-family: robotobold;
+    font-size : 27px;
+    height : 35px;
+    border-bottom : 4px solid #FFC107;
+    margin-bottom : -1px;
+    counter-increment : titre;
+    content : counter(titre) ") ";
+}
+
+article p {line-height : 23px}
+
+.interrogation {
+    font-style : italic;
+    font-weight : bold;
+    text-indent : 2mm;
+    margin : -20px auto -25px auto;
+}
+
+ul {
+    margin-left : 20px;
+    list-style-image : url("../Images/Icones/icons8-planete-24.png")
+}
+
+.questions {
+    background : lightyellow;
+    border : 2px solid #ff5722;
+    border-radius : 8px 2px;
+    padding : 8px;
+    font-weight : bold;
+    margin : 0 auto 0 10mm;
+    box-shadow: 10px 10px 2px #0097A7;
+}
+
+h1 + p {
+    font-weight : bold;
+    font-size : large;
+    text-align : center;
+}
+
+.postH2 {
+    margin-bottom: 30px;
+    display : grid;
+    grid-template-columns : 1fr;
+}
+
+#notes {
+    font-size : small;
+    margin : -10px;
+}
+
+.video {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    margin-top : 10px;
+}
+
+#carrousel img {width : 90%}
+
+#carrousel {
+    margin : 0 auto 20px auto;
+    display : grid;
+    grid-template-columns : repeat(7,auto)
+}
