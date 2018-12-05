@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+
+<header>
+    <meta charset="utf-8" />
+    <title>Galerie photo</title>
+    <link rel="stylesheet"  href="./Styles/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Styles/impression.css" media="print" />
+    <script type="text/javascript" src="./Scripts/galerie.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </header>
+    	<head>
+		<meta charset = "utf-8" />
+		<link rel="stylesheet" href="Styles/style.css.css"/>
+            <title> LTEM </title>
+
+		     <div id="mainmainMenu">
+			<ul id="menu-demo2">
+				<li><a href="accueil.html">Accueil</a></li>
+				<li><a href="../Page_imposee/Livre_Petit/livre_v2.html">Page imposée</a>
+					<ul>
+						<li><a href="../Page_imposee/Livre_Petit/livre_v2.html">Ovnis et armes secrètes américaines</a></li>
+					</ul>
+				</li>
+				<li><a href="">Pages libres</a>
+					<ul>
+						<li><a href="pirates.html">LTEM</a></li>
+						<li><a href="2_galerie.xhtml">Galerie</a></li>
+					</ul>
+				</li>
+				<li><a href="3_inscription.xhtml">Formulaire</a>
+
+				</li>
+			</ul>
+		</div>
+
+
+	
+</head>
+
+<body oncontextmenu="changeCouleurDeFond()">
+    <nav>
+    
+    </nav>
+    <article id="img">
+        <h1>Place à quelques images ...</h1>
+        <p><b id="id_quoi">a changer</b></p>
+        <p><img id="id_image" src="./Images/Photos/image1.jpg" height="500px" /></p>
+
+        <label>Méthode 1 : </label>
+        <input type="button" value="nom boutton 1" onclick="changeImageM1('./Images/Photos/image1.jpg', 'description 1')" />
+        <input type="button" value="nom Boutton 2" onclick="changeImageM1('./Images/Photos/images2.jpeg', 'description 2')" />
+        <br />
+
+        <label>Méthode 2 : </label>
+        <input type="button" value="nom boutton 3" onclick="changeImageM2('id_image', 'id_quoi', 'Images/Photos/images3.jpeg', 'description 3')" />
+        <input type="button" value="nom boutton 4" onclick="changeImageM2('id_image', 'id_quoi', 'Images/Photos/images4.jpeg', 'description 4')" />
+        <br />
+
+        <label>Méthode 3 : </label>
+        <input type="button" value="nom boutton 5" onclick="changeImageM3('Images/Photos/images5.jpeg', 'description 5')" />
+        <input type="button" value="nom Boutton 6" onclick="changeImageM3('Images/Photos/images6.jpeg', 'descrition 6')" />
+
+        <p><input type="button" value="Reset" onclick="changeImageM3('Images/Photos/images7.jpeg', 'description 7')" /></p>
+
+        <div id="carrousel">
+            <img src="./Images/Photos/image1.jpg" onmouseover="changeImageM3('Images/Photos/image1.jpg', 'description 1')" />
+            <img src="./Images/Photos/images2.jpeg" onmouseover="changeImageM1('Images/Photos/images2.jpeg', 'description 2')" />
+            <img src="./Images/Photos/images3.jpeg" onmouseover="changeImageM1('Images/Photos/images3.jpeg', 'description 3')" />
+            <img src="./Images/Photos/images4.jpeg" onmouseover="changeImageM2('id_image', 'id_quoi', 'Images/Photos/images4.jpeg', 'description 4')" />
+            <img src="./Images/Photos/images5.jpeg" onmouseover="changeImageM2('id_image', 'id_quoi', 'Images/Photos/images5.jpeg', 'description 5')" />
+            <img src="./Images/Photos/images6.jpeg" onmouseover="changeImageM3('Images/Photos/images6.jpeg', 'description 6')" />
+            <img src="./Images/Photos/images7.jpeg" onmouseover="changeImageM3('Images/Photos/images7.jpeg', 'Description 7')" />
+        </div>
+    </article>
+    <footer>
+        <a href="pirates.html"><img src="Images/fleches_vers_gauche.png" height="100px"/></a>
+        <p id="id_auteur">
+          Codeur: TORTELLI Sacha
+          <br />L1 Informatique Groupe 2
+          <br/>designer : VIGNAU Vincent
+          <br/>L1 Informatique Groupe 1
+          <br />Année : 2018-2019
+        </p>
+        <a href="./3_inscription.xhtml"><img src="Images/fleches_vers_droites.png" height="100px"/></a>
+    </footer>
+</body>
+</html>
+
