@@ -1,0 +1,237 @@
+/*-----------------------
+    ParamÃ¨tres gÃ©nÃ©raux
+-----------------------*/
+@font-face {
+    font-family : 'roboto';
+    src : url('./Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family : 'robotobold';
+    src : url('./Roboto/Roboto-Bold.ttf');
+}
+
+body {
+    font-family : roboto;
+    display : flex;
+    flex-direction : column;
+    min-height: 100vh;
+    background-image : url("../Images/rP8ADE.jpg");
+    background-attachment : fixed;
+    transition : all 0.2s;
+}
+
+/*-----------------------
+    Bandeau navigation
+-----------------------*/
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+position : relative ; top:-0px;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+moz-transition: .2s all .2s;
+webkit-transition: .2s all .2s;
+transition: .2s all .2s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:nth-child(2){
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:nth-child(3){
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:last-child{
+background-color: #6DCF79;
+
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#6DCF79;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#6DCF79;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#6DCF79;
+}
+#menu-demo2 li:last-child li{
+background:#6DCF79;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#FFFFFF;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#0000000;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#0000000;
+}
+
+#mainmainMenu{
+	position: relative; top:-100px;
+	position: relative; left:50px;
+}
+/*-----------------------
+    Section article
+-----------------------*/
+article {
+    margin-left : 10%;
+    margin-right : 10%;
+    flex : 1;
+    counter-reset: titre;
+}
+
+h1 {
+    color : #FF5722;
+    font-family: robotobold;
+    font-size : 45px;
+    text-align : center;
+}
+
+h2 {
+    color : #FFC107;
+    font-family: robotobold;
+    font-size : 27px;
+    height : 35px;
+    border-bottom : 4px solid #FFC107;
+    margin-bottom : -1px;
+    counter-increment : titre;
+    content : counter(titre) ") ";
+}
+
+article p {line-height : 23px}
+
+article a {
+    color : black;
+    transition : color 0.2s;
+}
+
+article a:hover{color : #ff5722}
+
+.interrogation {
+    font-style : italic;
+    font-weight : bold;
+    text-indent : 2mm;
+    margin : -20px auto -25px auto;
+}
+
+ul {
+    margin-left : 20px;
+    list-style-image : url("../Images/Icones/icons8-planete-24.png")
+}
+
+.questions {
+    background : lightyellow;
+    border : 2px solid #ff5722;
+    border-radius : 8px 2px;
+    padding : 8px;
+    font-weight : bold;
+    margin : 0 auto 0 10mm;
+    box-shadow: 10px 10px 2px #0097A7;
+}
+
+h1 + p {
+    font-weight : bold;
+    font-size : large;
+    text-align : center;
+    color : white;
+}
+
+.postH2 {
+    margin-bottom: 30px;
+    display : grid;
+    grid-template-columns : 1fr;
+}
+
+#notes {
+    font-size : small;
+    margin : -10px;
+}
+
+.video {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    margin-top : 10px;
+}
+
+#carrousel img {width : 90%}
+
+#carrousel {
+    margin : 0 auto 20px auto;
+    display : grid;
+    grid-template-columns : repeat(7,auto)
+}
+
+/*-----------------------
+    Pied de page
+-----------------------*/
+footer {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    background : #DDDDDD;
+    border-radius : 8px;
+}
+
+#id_auteur {
+    font-size : smaller;
+    font-weight : bold;
+    color : #2698D0;
+    align-self : baseline;
+    border : 2px solid #B5BD00;
+    border-radius : 8px 3px;
+    padding : 8px 100px;
+    text-align : center
+}
