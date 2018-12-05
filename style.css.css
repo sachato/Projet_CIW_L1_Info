@@ -1,0 +1,240 @@
+@font-face {
+    font-family : 'roboto';
+    src : url('./Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family : 'robotobold';
+    src : url('./Roboto/Roboto-Bold.ttf');
+}
+div#tetard{
+
+position : relative ; top:-60px;
+}
+div#tetard2{
+	float:right;
+	position: relative; top:-191px;
+
+}
+div#catCode{
+	text-align:center;
+
+}
+div#Grades{
+	text-align:center;
+	background-color:#939B9A;
+	font-style: bold;
+}
+
+div#SuprÃƒÂ¨me{
+	color:red;
+}
+
+body
+{
+	background-image:url("../Images/landscape.jpg");
+  background-attachment: fixed;
+	margin:0;
+	background-repeat:no-repeat;
+  min-height : 100vh;
+}
+#ac{
+   position : relative ; left:60px;
+}
+.pf1{
+color:white;
+font-size:xx-small;
+}
+ h1
+{
+	color:red;
+	font-style: bold;
+	font-family: "robotobold";
+	text-align:center;
+	font-size: xx-large;
+	position : relative ; top:60px;
+}
+ p
+{
+	color:white;
+	font-size: x-large;
+	font-style: bold;
+    text-align: center ;
+
+}
+.p3
+{
+	color:white;
+	font-size: small;
+
+}
+.p2
+{
+	color:white;
+	font-size: x-large;
+	font-style: bold;
+}
+.p4
+{
+	color:red;
+	font-size: xx-large;
+	font-style: bold;
+	text-align:center;
+    box-shadow: inset 0 0 1em gold, 0 0 2em red;
+
+}
+.p5
+{
+    color:red;
+	font-size: large;
+	font-style: bold;
+	text-align:center;
+}
+.a1
+{
+	color:white;
+	font-size: small;
+	clear:both;
+}
+.a2
+{
+	color:white;
+	font-size: small;
+	clear:both;
+}
+#liste
+{
+		text-align:center;
+}
+.pm1{
+	float:right;
+}
+.li1:hover img
+{
+	transform:scale(4);
+}
+.li2:hover img
+{
+	transform:scale(4);
+}
+.li3:hover img
+{
+	transform:scale(4);
+}
+.li4:hover
+{
+	transform:scale(4);
+}
+.p5:hover
+{
+	color:#000000;
+}
+
+.interrogation {
+    font-style : italic;
+    font-weight : bold;
+    text-indent : 2mm;
+    margin : -20px auto -25px auto;
+}
+
+#menu-demo2, #menu-demo2 ul{
+padding:0;
+margin:0;
+list-style:none;
+text-align:center;
+position : relative ; top:-0px;
+}
+#menu-demo2 li{
+display:inline-block;
+position:relative;
+border-radius:8px 8px 0 0;
+}
+#menu-demo2 ul li{
+display:inherit;
+border-radius:0;
+}
+#menu-demo2 ul li:hover{
+border-radius:0;
+}
+#menu-demo2 ul li:last-child{
+border-radius:0 0 8px 8px;
+}
+#menu-demo2 ul{
+position:absolute;
+z-index: 1000;
+max-height:0;
+left: 0;
+right: 0;
+overflow:hidden;
+moz-transition: .2s all .2s;
+webkit-transition: .2s all .2s;
+transition: .2s all .2s;
+}
+#menu-demo2 li:hover ul{
+max-height:15em;
+}
+/* background des liens menus */
+#menu-demo2 li:first-child{
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:nth-child(2){
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:nth-child(3){
+background-color: #6DCF79;
+
+}
+#menu-demo2 li:last-child{
+background-color: #6DCF79;
+
+}
+/* background des liens sous menus */
+#menu-demo2 li:first-child li{
+background:#6DCF79;
+}
+#menu-demo2 li:nth-child(2) li{
+background:#6DCF79;
+}
+#menu-demo2 li:nth-child(3) li{
+background:#6DCF79;
+}
+#menu-demo2 li:last-child li{
+background:#6DCF79;
+}
+/* background des liens menus et sous menus au survol */
+#menu-demo2 li:first-child:hover, #menu-demo2 li:first-child li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:nth-child(2):hover, #menu-demo2 li:nth-child(2) li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:nth-child(3):hover, #menu-demo2 li:nth-child(3) li:hover{
+background:#FFFFFF;
+}
+#menu-demo2 li:last-child:hover, #menu-demo2 li:last-child li:hover{
+background:#FFFFFF;
+}
+/* les a href */
+#menu-demo2 a{
+text-decoration:none;
+display:block;
+padding:8px 32px;
+color:#0000000;
+font-family:arial;
+}
+#menu-demo2 ul a{
+padding:8px 0;
+}
+#menu-demo2 li:hover li a{
+color:#0000000;
+}
+
+#mainmainMenu{
+	position: relative; top:-100px;
+	position: relative; left:50px;
+}
+ul{
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+}
