@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Inscription</title>
+    <link rel="stylesheet" type="text/css" href="./Styles/formulaire.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="./Styles/impression.css" media="print" />
+    <script type="text/javascript" src="./Scripts/formulaire.js"></script>
+</head>
+
+<body>
+    <article>
+        <h1>Inscrivez-vous sans tarder !</h1>
+        <p> Pour être au courant des mises a jour de la galerie !</p>
+        <form method="get" action="https://httpbin.org/get">
+          <div>
+            <fieldset>
+                <legend>Identité</legend>
+
+                <label for="f_civilite">Civilité :</label>
+                <select name="iden_civilite" id="f_civilite">
+                    <option value="Madame">Mme</option>
+                    <option value="Monsieur">M.</option>
+                </select>
+                <label for="f_prenom">Prénom :</label>
+                <input type="text" name="iden_prenom" id="f_prenom" placeholder="Ex : César" />
+                <label for="f_nom">Nom :</label>
+                <input type="text" name="iden_nom" id="f_nom" placeholder="Ex : Bistrucla"/>
+                <label for="f_date">Date de naissance :</label>
+                <input type="date" name="iden_date" id="f_date" />
+                <label for="iden_email">Email :</label>
+                <input type="email" name="iden_email" id="f_email" placeholder="Ex : césar.bistrucla@mail.com"/>
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de facturation</legend>
+                <label for="f_adresse">Adresse :</label>
+                <input type="text" name="fact_adresse" id="f_adresse" placeholder="Ex: 11 Rue Frederic Mistral" />
+                <label for="f_code_postal">Code postal :</label>
+                <input type="text" name="fact_code_postal" id="f_code_postal" placeholder="Ex : 64000" maxlength="5" />
+                <label for="f_ville">Ville :</label>
+                <input type="text" name="fact_ville" id="f_ville"  placeholder="Ex : Pau"/>
+            </fieldset>
+            <fieldset>
+                <legend>Adresse de livraison</legend>
+                <label>Idem que facturation</label>
+                <input type="checkbox" onclick="adresseIdent()" id="checkbox" />
+                <label for="f_adresse">Adresse :</label>
+                <input type="text" name="livr_adresse" id="l_adresse" />
+                <label for="f_code_postal">Code postal :</label>
+                <input type="text" name="livr_code_postal" id="l_code_postal" maxlength="5" />
+                <label for="f_ville">Ville :</label>
+                <input type="text" name="livr_ville" id="l_ville" />
+
+            </fieldset>
+              </div>
+            <input type="submit" value="Envoyer" />
+        </form>
+         <a href="../accueil.xhtml"><img src="Images/accueil.png" alt="logo" title="acceuil" style="width:50px;" class="accueil"/></a>
+    </article>
+    <footer>
+        <a href="./2_galerie.xhtml"><img src="./Images/Icones/icons8-chevron-carre-gauche-48.png" /></a>
+        <p id="id_auteur">
+            Auteurs du site : VIGNAU Vincent et TORTELLI Sacha
+            <br />L1 Informatique Groupe D
+            <br />Année : 2018-2019
+        </p>
+        <a href="../accueil.xhtml"><img src="./Images/Icones/icons8-fleche-droite-48.png" /></a>
+    </footer>
+</body>
+</html>
+
